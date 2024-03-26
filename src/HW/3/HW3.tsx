@@ -9,6 +9,7 @@ export const HW3 = () => {
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
      setCurrentText(e.currentTarget.value);
+     console.log(currentText, 'currentText')
   };
 
   const handleSave = (currentText: string) => {
@@ -19,7 +20,7 @@ export const HW3 = () => {
   return (
     <div id={'hw03'}>
        {currentText ? (
-        <h1 id={'hw03-text'}></h1>
+        <h1 id={'hw03-text'}>{currentText}</h1>
       ) : (
         <h1 id={'hw03-default-text'}>Здесь появится новое дело</h1> // ничего не меняем, здесь все норм*/}
       )}
